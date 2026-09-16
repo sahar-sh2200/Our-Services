@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" href="">
+    <title>Document</title>
+</head>
+<style>
+   
+body { font-family: Arial, Helvetica, sans-serif; background: #f8f9f8; }
+/* Main */ .container { width: 1000px; max-width: 94%; margin: 45px auto; background: white; padding: 28px 25px 35px; border-radius: 8px; }
+/* Title */ .title { text-align: center; margin-bottom: 25px; }
+.title h1 { font-size: 28px; color: #666; margin-bottom: 8px; }
+.title p { font-size: 13px; color: #aaa; }
+/* Gallery */ .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+/* Images */ .photo { width: 100%; height: 210px; overflow: hidden; border-radius: 8px; }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block;
+transition: 0.3s;
+}
+.photo img:hover { transform: scale(1.05); }
+/* Bottom banner */ .banner { margin-top: 25px; min-height: 145px;
+background: #43b6bd;
+border-radius: 10px;
+
+display: flex;
+align-items: center;
+
+padding: 25px 35px;
+
+color: white;
+}
+/* Camera */ .camera { font-size: 55px; width: 100px; text-align: center; }
+/* Banner text */ .banner-text { flex: 1; margin-left: 25px; }
+.banner-text h2 { font-size: 19px; margin-bottom: 14px; }
+.banner-text p { font-size: 15px; }
+/* Close */ .close { background: transparent; border: none;
+color: white;
+font-size: 38px;
+
+cursor: pointer;
+
+align-self: flex-start;
+}
+/* Tablet */ @media (max-width: 800px) {
+.gallery {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.photo {
+    height: 190px;
+}
+}
+/* Mobile */ @media (max-width: 500px) {
+.container {
+    padding: 20px 15px;
+}
+
+.gallery {
+    grid-template-columns: 1fr;
+}
+
+.photo {
+    height: 220px;
+}
+
+.banner {
+    padding: 20px;
+}
+
+.camera {
+    font-size: 40px;
+    width: 60px;
+}
+
+.banner-text {
+    margin-left: 10px;
+}
+
+.banner-text h2 {
+    font-size: 15px;
+}
+
+.banner-text p {
+    font-size: 12px;
+}
+}
+</style>
+<body>
+  <div class="container">
+
+    <!-- Title -->
+    <div class="title">
+        <h1>Travel Gallery</h1>
+        <p>Memories from all around</p>
+    </div>
+
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <div class="photo">
+            <img src="ی6.jpg" alt="Travel">
+        </div>
+
+        <div class="photo">
+            <img src="./یی3.jpg" alt="Travel">
+        </div>
+
+        <div class="photo">
+            <img src="./dd1.jpg" alt="Travel">
+        </div>
+
+        <div class="photo">
+           <img src="./ی5.jpg" alt="">
+        </div>
+
+        <div class="photo">
+            <img src="dd2.jpg" alt="Travel">
+        </div>
+
+        <div class="photo">
+            <img src="./ی4.jpg" alt="Travel">
+        </div>
+
+        <div class="photo">
+            <img src="ی8.jpg" alt="Travel">
+        </div>
+
+        <div class="photo">
+            <img src="./ی7.jpg" alt="Travel">
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Banner -->
+    <div class="banner">
+
+        <div class="camera">
+            📷
+        </div>
+
+        <div class="banner-text">
+            <h2>Collect moments, not things.</h2>
+            <p>Travel. Explore. Remember.</p>
+        </div>
+
+        <button class="close">×</button>
+
+    </div>
+
+</div>  
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TravelGo - Contact / Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  background: #ff6600;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-info, .booking-form {
+  width: 45%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info h2, .booking-form h2 {
+  color: #ff6600;
+  margin-bottom: 15px;
+}
+
+.social a {
+  margin-right: 10px;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #e65c00;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-columns h3 {
+  color: #ff6600;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-columns li {
+  margin: 5px 0;
+}
+
+.newsletter input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.newsletter button {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+<body>
+  <header class="header">
+    <h1>TravelGo</h1>
+    <p>Explore the world with us and make unforgettable memories.</p>
+  </header>
+
+  <main class="container">
+    <!-- Contact Info -->
+    <section class="contact-info">
+      <h2>Contact Info</h2>
+      <p><strong>Location:</strong> 123 Travel Street, Adventure City, AC 12345</p>
+      <p><strong>Phone:</strong> +1 234 567 890</p>
+      <p><strong>Email:</strong> info@travelgo.com</p>
+      <div class="social">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-form">
+      <h2>Book Your Trip</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <select required>
+          <option>Select Destination</option>
+          <option>Bali</option>
+          <option>Paris</option>
+          <option>Dubai</option>
+          <option>Maldives</option>
+          <option>Japan</option>
+        </select>
+        <input type="number" placeholder="Number of People" min="1" required>
+        <input type="date" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Submit / Book Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-columns">
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li>Home</li>
+          <li>Destinations</li>
+          <li>Tours</li>
+          <li>About Us</li>
+          <li>Gallery</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Top Destinations</h3>
+        <ul>
+          <li>Bali</li>
+          <li>Paris</li>
+          <li>Dubai</li>
+          <li>Maldives</li>
+          <li>Japan</li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to get updates and best offers!</p>
+        <input type="email" placeholder="Your Email">
+        <button>→</button>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

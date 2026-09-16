@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+}
+.hero {
+    height: 680px;
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(0, 20, 25, 0.82),
+            rgba(0, 20, 25, 0.82)
+        ),
+        url(../hw/photo_6.jpg);
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+.navbar {
+    width: 1100px;
+    max-width: 90%;
+    height: 70px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.logo span {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+
+    margin-left: 15px;
+    color: #777;
+}
+
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #18d6a3;
+}
+.hero-content {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -45%);
+
+    text-align: center;
+
+    width: 90%;
+}
+.hero-content h1 {
+    font-size: 58px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 strong {
+    font-weight: 700;
+}
+
+
+.hero-content h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.hero-content h2 span {
+    color: #18d6a3;
+}
+
+
+.line {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.line span {
+    width: 30px;
+    height: 1px;
+    background: #18d6a3;
+}
+
+.line p {
+    font-size: 16px;
+}
+
+
+.social {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social a {
+    color: #777;
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #18d6a3;
+    transform: translateY(-3px);
+}
+.slider-dots {
+    position: absolute;
+
+    right: 20px;
+    top: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.slider-dots span {
+    width: 8px;
+    height: 8px;
+
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.slider-dots .active {
+    background: white;
+}
+
+.features {
+    background: #f7f8fa;
+
+    min-height: 370px;
+
+    padding: 65px 5%;
+}
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    color: #16c89a;
+
+    font-size: 26px;
+    font-weight: 800;
+}
+.title-line {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.title-line span {
+    width: 145px;
+    height: 1px;
+
+    background: #ddd;
+}
+
+.title-line i {
+    color: #ccc;
+    font-size: 18px;
+}
+.feature-container {
+    width: 1100px;
+    max-width: 100%;
+
+    margin: 55px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 60px;
+}
+.feature {
+    display: flex;
+    gap: 20px;
+}
+.icon {
+    min-width: 48px;
+    height: 48px;
+
+    border: 1px solid #18c9a0;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #18c9a0;
+
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+
+.feature:hover .icon {
+    background: #18c9a0;
+    color: white;
+
+    transform: rotate(10deg);
+}
+.feature-text h3 {
+    color: #222;
+
+    font-size: 19px;
+
+    margin-bottom: 15px;
+}
+.feature-text p {
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #fff;
+}
+
+.works {
+    width: 100%;
+    padding-top: 70px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.container h1 {
+    color: #20b89b;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.line {
+    width: 330px;
+    height: 35px;
+
+    margin: 20px auto;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line::before {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 1px;
+
+    background: #ddd;
+
+    top: 50%;
+    left: 0;
+}
+
+.line span {
+    position: relative;
+
+    background: white;
+
+    padding: 0 15px;
+
+    color: #ccc;
+
+    font-size: 24px;
+}
+
+
+.description {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    font-weight: 600;
+}
+.filters {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 45px;
+
+    margin-top: 45px;
+
+    margin-bottom: 45px;
+}
+
+.filters button {
+    border: none;
+
+    background: transparent;
+
+    color: #222;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    padding: 10px 18px;
+
+    transition: 0.3s;
+}
+.filters button.active {
+    background: #20b89b;
+
+    color: white;
+
+    border-radius: 6px;
+}
+.filters button:hover {
+    color: #20b89b;
+}
+
+.filters button.active:hover {
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+.gallery {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 0;
+}
+
+.item {
+    position: relative;
+
+    width: 100%;
+
+    height: 270px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.item img {
+    width: 100%;
+
+    height: 100%;
+
+    
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(32, 184, 155, 0.85);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    opacity: 0;
+
+    transition: 0.4s ease;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 15px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #182535;
+    background: white;
+}
+.team {
+    padding: 80px 7%;
+    text-align: center;
+    background: #fff;
+}
+
+.team h2,
+.fun-facts h2 {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.title-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 22px auto 35px;
+}
+
+.title-line span {
+    width: 150px;
+    height: 1px;
+    background: #ddd;
+}
+
+.title-line i {
+    color: #ccc;
+    font-size: 18px;
+}
+.team-text {
+    max-width: 950px;
+    margin: 0 auto 55px;
+    color: #66717d;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 600;
+}
+.team-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+.team-card {
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.team-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.team-card img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.team-card h3 {
+    margin-top: 18px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+.team-card p {
+    margin-top: 10px;
+
+    color: #89929b;
+
+    font-size: 14px;
+}
+.fun-facts {
+    position: relative;
+
+    min-height: 500px;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 75px 7%;
+}
+.overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(5, 24, 40, 0.78);
+}
+
+
+.facts-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.fun-facts h2 {
+    color: #14bda5;
+}
+
+.fun-facts .title-line {
+    margin-bottom: 60px;
+}
+
+.fun-facts .title-line span {
+    background: rgba(255,255,255,0.3);
+}
+
+.fun-facts .title-line i {
+    color: white;
+}
+.facts-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 50px;
+}
+
+.fact {
+    text-align: center;
+}
+.icon {
+    width: 105px;
+    height: 105px;
+
+    border: 1px solid
+        rgba(255,255,255,0.45);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 25px;
+
+    transition: 0.3s;
+}
+.icon i {
+    font-size: 35px;
+
+    color: white;
+}
+.fact:hover .icon {
+    background: #14bda5;
+
+    border-color: #14bda5;
+
+    transform: scale(1.08);
+}
+.fact h3 {
+    font-size: 50px;
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+.fact p {
+    font-size: 15px;
+
+    letter-spacing: 1px;
+
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: white;
+}
+
+.discuss {
+    min-height: 690px;
+    padding-top: 70px;
+}
+
+.discuss h1 {
+    text-align: center;
+    color: #16a896;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.line {
+    width: 320px;
+    height: 35px;
+    margin: 15px auto 30px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.line span {
+    position: relative;
+    top: -13px;
+    background: white;
+    padding: 0 12px;
+    color: #bbb;
+    font-size: 22px;
+}
+
+.intro {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #555;
+}
+
+.content {
+    width: 75%;
+    margin: 65px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 50px;
+    gap: 40px;
+}
+
+.address h2,
+.contact h2 {
+    font-size: 23px;
+    line-height: 1.35;
+    margin-bottom: 28px;
+}
+
+.address p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #777;
+}
+
+.row {
+    display: flex;
+    gap: 40px;
+}
+
+input,
+textarea {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.row input {
+    width: 50%;
+}
+
+textarea {
+    width: 100%;
+    height: 70px;
+    resize: none;
+    margin-top: 15px;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.contact button {
+    float: right;
+    margin-top: 15px;
+    color: #333;
+    font-size: 14px;
+}
+
+.contact button:first-letter {
+    color: #16a896;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: #bbb;
+    font-size: 22px;
+}
+footer {
+    background: #18a996;
+    min-height: 520px;
+    color: white;
+    padding: 65px 13% 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+    gap: 70px;
+}
+
+.brand h2 {
+    font-family: cursive;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.brand p,
+.subscribe p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+footer h3 {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.subscribe-box {
+    width: 100%;
+    height: 38px;
+    border: 1px solid white;
+    display: flex;
+}
+
+.subscribe-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.subscribe-box button {
+    width: 45px;
+    color: white;
+    font-size: 25px;
+}
+
+.subscribe p {
+    margin-top: 15px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 125px;
+}
+    </style>
+<body>
+    <header class="hero">
+
+        <nav class="navbar">
+            <div class="logo">
+                Brandi
+                <span>I'am your tag line</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Meet <strong>Brandi!</strong></h1>
+
+            <h2>
+                <span>/creative</span> one page template.
+            </h2>
+
+            <div class="line">
+                <span></span>
+                <p>We are a team of professionals</p>
+                <span></span>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+        </div>
+
+        <div class="slider-dots">
+            <span class="active"></span>
+            <span></span>
+        </div>
+
+    </header>
+    <section class="features" id="features">
+
+        <div class="section-title">
+            <h2>FEATURES</h2>
+
+            <div class="title-line">
+                <span></span>
+                <i class="fa-regular fa-heart"></i>
+                <span></span>
+            </div>
+        </div>
+
+
+        <div class="feature-container">
+            <div class="feature">
+                <div class="icon">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+
+                <div class="feature-text">
+                    <h3>Branding</h3>
+
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo
+                        inventore.
+                    </p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="icon">
+                    <i class="fa-solid fa-pencil"></i>
+                </div>
+
+                <div class="feature-text">
+                    <h3>Development</h3>
+
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo
+                        inventore.
+                    </p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+
+                <div class="feature-text">
+                    <h3>Consulting</h3>
+
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo
+                        inventore.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+</section>
+
+    <section class="works">
+
+        <div class="container">
+
+            <!-- Title -->
+            <h1>WORKS</h1>
+
+            <div class="line">
+                <span>♡</span>
+            </div>
+
+            <!-- Description -->
+            <p class="description">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam,
+                eaque ipsa quae ab illo inventore
+            </p>
+
+            <!-- Filter Buttons -->
+            <div class="filters">
+                <button class="active">All</button>
+                <button>Branding</button>
+                <button>Web</button>
+                <button>Logo Design</button>
+                <button>Photography</button>
+            </div>
+
+        </div>
+
+        <!-- Gallery -->
+        <div class="gallery">
+
+            <div class="item branding">
+                <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=800&q=80" alt="">
+                <div class="overlay">
+                    <h3>Branding</h3>
+                    <p>Creative Design</p>
+                </div>
+            </div>
+
+            <div class="item photography">
+                <img src="https://images.unsplash.com/photo-1544550285-f813152fb2fd?auto=format&fit=crop&w=800&q=80" alt="">
+                <div class="overlay">
+                    <h3>Photography</h3>
+                    <p>Creative Work</p>
+                </div>
+            </div>
+
+            <div class="item photography">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="">
+                <div class="overlay">
+                    <h3>Photography</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+            <div class="item web">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="">
+                <div class="overlay">
+                    <h3>Web Design</h3>
+                    <p>Creative Website</p>
+                </div>
+            </div>
+
+            <div class="item branding">
+                <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=800&q=80" alt="">
+                <div class="overlay">
+                    <h3>Branding</h3>
+                    <p>Design Project</p>
+                </div>
+            </div>
+
+            <div class="item web">
+                <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=800&q=80" alt="">
+                <div class="overlay">
+                    <h3>Web Design</h3>
+                    <p>Creative Design</p>
+                </div>
+            </div>
+
+            <div class="item branding">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80" alt="">
+                <div class="overlay">
+                    <h3>Branding</h3>
+                    <p>Modern Design</p>
+                </div>
+            </div>
+
+            <div class="item logo">
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=80" alt="">
+                <div class="overlay">
+                    <h3>Logo Design</h3>
+                    <p>Creative Project</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="team">
+
+        <h2>OUR TEAM</h2>
+
+        <div class="title-line">
+            <span></span>
+            <i class="fa-regular fa-heart"></i>
+            <span></span>
+        </div>
+
+        <p class="team-text">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore
+        </p>
+
+
+        <div class="team-container">
+            <div class="team-card">
+
+                <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                     alt="John Filmer Doe">
+
+                <h3>John Filmer Doe</h3>
+
+                <p>Managing Director</p>
+
+            </div>
+            <div class="team-card">
+
+                <img src="https://randomuser.me/api/portraits/men/45.jpg"
+                     alt="Martin Matr​​one">
+
+                <h3>Martin Matrone</h3>
+
+                <p>Lead Developer</p>
+
+            </div>
+            <div class="team-card">
+
+                <img src="https://randomuser.me/api/portraits/men/68.jpg"
+                     alt="Steve Flaukin">
+
+                <h3>Steve Flaukin</h3>
+
+                <p>Sr. UI Designer</p>
+
+            </div>
+            <div class="team-card">
+
+                <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                     alt="John Filmer Doe">
+
+                <h3>John Filmer Doe</h3>
+
+                <p>Managing Director</p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="fun-facts">
+
+        <div class="overlay"></div>
+
+        <div class="facts-content">
+
+            <h2>SOME FUN FACTS</h2>
+
+            <div class="title-line">
+                <span></span>
+                <i class="fa-regular fa-heart"></i>
+                <span></span>
+            </div>
+
+
+            <div class="facts-container">
+
+                <!-- Fact 1 -->
+                <div class="fact">
+
+                    <div class="icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+
+                    <h3>208</h3>
+
+                    <p>HOURS OF WORK</p>
+
+                </div>
+                <div class="fact">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <h3>53</h3>
+
+                    <p>SATISFIED CLIENTS</p>
+
+                </div>
+                <div class="fact">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+
+                    <h3>66</h3>
+
+                    <p>PROJECTS DELIVERED</p>
+
+                </div>
+                <div class="fact">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+
+                    <h3>370</h3>
+
+                    <p>AWARDS WON</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+<section class="discuss">
+        <h1>LET'S DISCUSS</h1>
+
+        <div class="line">
+            <span>♡</span>
+        </div>
+
+        <p class="intro">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore
+        </p>
+
+        <div class="content">
+
+            <div class="address">
+                <h2>Cras at ultrices erat, sed<br>vulputate!</h2>
+
+                <p>
+                    2345 Stewart nater, 1234,<br>
+                    Washington, United States.<br>
+                    (401) 1234 567
+                </p>
+            </div>
+
+            <div class="contact">
+                <h2>Say hello!</h2>
+
+                <form>
+                    <div class="row">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <textarea placeholder="Message"></textarea>
+
+                    <button type="submit">
+                        ✉️ &nbsp; Send message
+                    </button>
+                </form>
+            </div>
+
+            <div class="social">
+                <span>𝕭</span>
+                <span>♥️</span>
+                <span>◎</span>
+                <span>f</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+
+            <div class="brand">
+                <h2>Brandi</h2>
+                <p>
+                    eusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <div class="subscribe">
+                <h3>Subscribe</h3>
+
+                <div class="subscribe-box">
+                    <input type="text">
+                    <button>→</button>
+                </div>
+
+                <p>
+                    eusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                </p>
+            </div>
+
+            <div class="links">
+                <h3>Explore</h3>
+                <a href="#">Inside Us</a>
+                <a href="#">Flickr</a>
+                <a href="#">Google</a>
+                <a href="#">Forum</a>
+            </div>
+
+            <div class="links">
+                <h3>Support</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">Market Blog</a>
+                <a href="#">Help Center</a>
+                <a href="#">Pressroom</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            Copyright © 2015 Themefisher. All rights reserved.
+            Designed & developed by Themefisher
+        </p>
+    </footer>
+
+</body>
+</html>

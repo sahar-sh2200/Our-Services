@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+display:flex;
+gap:35px;
+}
+
+.card{
+width:240px;
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.top{
+height:140px;
+background:#1a18c8;
+border-bottom-left-radius:30px;
+position:relative;
+}
+
+.top img{
+width:90px;
+height:90px;
+border-radius:50%;
+border:4px solid #fff;
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-10%);
+object-fit:cover;
+}
+
+.bottom{
+padding:60px 20px 25px;
+text-align:center;
+}
+
+.bottom h2{
+font-size:26px;
+color:#222;
+}
+
+.bottom h4{
+margin-top:8px;
+font-size:15px;
+color:#666;
+}
+
+.icons{
+margin:20px 0;
+}
+
+.icons i{
+width:35px;
+height:35px;
+background:#1a18c8;
+color:#fff;
+border-radius:50%;
+line-height:35px;
+margin:0 5px;
+cursor:pointer;
+transition:.3s;
+}
+
+.icons i:hover{
+background:#ff0066;
+}
+
+button{
+padding:12px 35px;
+background:#1a18c8;
+border:none;
+color:#fff;
+border-radius:6px;
+cursor:pointer;
+font-size:15px;
+}
+
+button:hover{
+background:#ff0066;
+}
+</style>
+<body>
+    
+
+
+
+
+<div class="container">
+
+<div class="card">
+
+<div class="top">
+<img src="../hw/images d.jpg">
+</div>
+
+<div class="bottom">
+<h2>Hayley Phillips</h2>
+<h4>Web Developer</h4>
+
+<div class="icons">
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-linkedin-in"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+</div>
+
+<button>Read More</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="top">
+<img src="./images d2.jpg">
+</div>
+
+<div class="bottom">
+<h2>James Rodry</h2>
+<h4>Product Designer</h4>
+
+<div class="icons">
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-linkedin-in"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+</div>
+
+<button>Read More</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="top">
+<img src="./images d3.jpg">
+</div>
+
+<div class="bottom">
+<h2>Jaw-Long</h2>
+<h4>Hiring Manager</h4>
+
+<div class="icons">
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-linkedin-in"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+</div>
+
+<button>Read More</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+</body>
+</html>

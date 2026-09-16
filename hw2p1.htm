@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:url(background.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+.team{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    background-image: url(../hw/images\ \(3\).jpg);
+    background-repeat: no-repeat
+    ;
+    background-size: cover;
+}
+
+.card{
+    width:250px;
+    height:340px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(8px);
+    border-radius:10px;
+    text-align:center;
+    padding:30px 20px;
+    box-sizing: border-box;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border-style: double;
+    border:4px solid deeppink;
+    object-fit:cover;
+}
+
+.card h2{
+    color:#fff;
+    margin-top:20px;
+}
+
+.card p{
+    color:#ddd;
+    margin:10px 0 30px;
+    font-size:15px;
+}
+
+button{
+    background:deeppink;
+    color:white;
+    border:none;
+    padding:10px 35px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#ff2c8b;
+}
+</style>
+
+<body>
+
+
+<section class="team">
+
+    <div class="card">
+        <img src="../hw/images d.jpg" alt="">
+        <h2>James Rodry</h2>
+        <p>Web Developer</p>
+        <button>Message</button>
+    </div>
+
+    <div class="card">
+        <img src="../hw/images d2.jpg" alt="">
+        <h2>Hayley Phillips</h2>
+        <p>Graphic Designer</p>
+        <button>Message</button>
+    </div>
+
+    <div class="card">
+        <img src="../hw/images d3.jpg" alt="">
+        <h2>Jaw-Long</h2>
+        <p>Hiring Manager</p>
+        <button>Message</button>
+    </div>
+
+</section>
+
+  
+</body>
+</html>

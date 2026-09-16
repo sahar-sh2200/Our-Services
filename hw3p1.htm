@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+
+
+.hero {
+    height: 360px;
+
+    background-image: url("./images\ سس.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 800px;
+
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: bold;
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+
+    text-shadow: 1px 2px 5px rgba(0,0,0,.5);
+}
+
+.hero-content p {
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Search */
+
+.search-box {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 5px;
+}
+
+.search-box select,
+.search-box input {
+    height: 42px;
+
+    border: none;
+
+    padding: 0 15px;
+
+    outline: none;
+
+    font-size: 13px;
+}
+
+.search-box select {
+    width: 230px;
+}
+
+.search-box input {
+    width: 130px;
+}
+
+.search-box button {
+    height: 42px;
+
+    border: none;
+
+    padding: 0 25px;
+
+    background: #69be45;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.search-box button:hover {
+    background: #4ea52f;
+}
+
+
+
+.navbar {
+    height: 75px;
+
+    background: #238dbd;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+}
+
+.nav-item {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    cursor: pointer;
+
+   
+}
+
+.nav-item i {
+    font-size: 20px;
+
+    margin-bottom: 7px;
+}
+
+.nav-item span {
+    font-size: 11px;
+}
+
+.nav-item:hover {
+    transform: translateY(-3px);
+
+    color: #eaffff;
+}
+
+
+.programs {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 45px 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    
+}
+
+
+
+
+.program-text h2 {
+    color: #238dbd;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+.program-text h2 i {
+    margin-right: 8px;
+}
+
+.program-text h4 {
+    font-size: 13px;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+}
+
+.program-text p {
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #666;
+
+    max-width: 300px;
+}
+
+
+
+
+.program-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+.program-card {
+    height: 130px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+.program-card i {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.program-card span {
+    font-size: 11px;
+
+    line-height: 1.4;
+}
+
+
+
+
+.program-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+
+    
+}
+
+.automotive {
+    background: #3e86a5;
+}
+
+.business {
+    background: #c75a42;
+}
+
+.creative {
+    background: #e4cf35;
+}
+
+.drafting {
+    background: #3f91bd;
+}
+
+.highschool {
+    background: #397c9b;
+}
+
+.legal {
+    background: #667075;
+}
+
+.technology {
+    background: #e5a817;
+}
+
+.more {
+    background: #25823b;
+}
+
+
+
+</style>
+<body>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>GET MATCHED TO SCHOOL<br>THAT HELP YOU LAUNCH A CAREER</h1>
+
+            <p>
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                aliquet. Aenean sollicitudin, lorem ipsum dolor sit amet.
+            </p>
+
+            <div class="search-box">
+
+                <select>
+                    <option>Program of Interest</option>
+                    <option>Automotive</option>
+                    <option>Business</option>
+                    <option>Technology</option>
+                </select>
+
+                <input type="text" placeholder="Zip Code">
+
+                <button>Search Now</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="nav-item">
+            <i class="fa-solid fa-table-cells"></i>
+            <span>PROGRAMS</span>
+        </div>
+
+        <div class="nav-item">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>QUICK SEARCH</span>
+        </div>
+
+        <div class="nav-item">
+            <i class="fa-solid fa-handshake"></i>
+            <span>BENEFITS</span>
+        </div>
+
+        <div class="nav-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>NEARBY SCHOOLS</span>
+        </div>
+
+        <div class="nav-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>FEATURED SCHOOL</span>
+        </div>
+
+    </nav>
+
+
+    <!-- Programs Section -->
+    <section class="programs">
+
+        <div class="program-text">
+
+            <h2>
+                <i class="fa-solid fa-table-cells"></i>
+                PROGRAMS
+            </h2>
+
+            <h4>SEARCH BY PROGRAM</h4>
+
+            <p>
+                This is Photoshop's version of Lorem Ipsum.
+                Proin gravida nibh vel velit auctor aliquet.
+                Aenean sollicitudin, lorem quis bibendum auctor,
+                nisi elit consequat ipsum.
+            </p>
+
+        </div>
+
+
+        <div class="program-grid">
+
+            <div class="program-card automotive">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOMOTIVE</span>
+            </div>
+
+            <div class="program-card business">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>BUSINESS</span>
+            </div>
+
+            <div class="program-card creative">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <span>CREATIVE<br>& DESIGN</span>
+            </div>
+
+            <div class="program-card drafting">
+                <i class="fa-solid fa-compass-drafting"></i>
+                <span>DRAFTING</span>
+            </div>
+
+            <div class="program-card highschool">
+                <i class="fa-solid fa-school"></i>
+                <span>HIGH SCHOOL</span>
+            </div>
+
+            <div class="program-card legal">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <span>LEGAL STUDIES</span>
+            </div>
+
+            <div class="program-card technology">
+                <i class="fa-solid fa-microchip"></i>
+                <span>TECHNOLOGY</span>
+            </div>
+
+            <div class="program-card more">
+                <i class="fa-solid fa-plus"></i>
+                <span>MORE PROGRAMS</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+</html>

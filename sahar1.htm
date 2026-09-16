@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TravelGo - Our Popular Tours</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+
+
+.book-btn {
+  background: #F4A261;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tours {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.tour-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  color: #F4A261;
+  margin: 10px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+.card button {
+  background: #F4A261;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #F4A261;
+}
+
+.special-offer {
+  margin-top: 50px;
+  background: linear-gradient(to right, #0077cc, #00aaff);
+  color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  background-image: url(./p1.jpg);
+  background-position: center;
+   background-size:cover;
+}
+
+.special-offer button {
+  background: #F4A261;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+<body>
+  <header class="header">
+
+    <nav class="navbar container">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span>Wanderly</span>
+        </a>
+
+        <!-- Navigation -->
+        <ul class="nav-menu">
+
+            <li>
+                <a href="index.html" class="nav-link active">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="destinations.html" class="nav-link">
+                    Destinations
+                </a>
+            </li>
+
+            <li>
+                <a href="tours.html" class="nav-link">
+                    Tours
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html" class="nav-link">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="blog.html" class="nav-link">
+                    Blog
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- Right Side -->
+        <div class="nav-actions">
+
+            <button class="search-btn" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <a href="contact.html" class="nav-btn">
+                Book Now
+            </a>
+
+            <button class="menu-btn" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+  <section class="tours">
+    <h2>Our Popular Tours</h2>
+    <p>Choose from our best-selling tour packages</p>
+
+    <div class="tour-cards">
+      <div class="card">
+        <img src="./p1.jpg">
+        <h3>Bali Getaway</h3>
+        <p>5 Days / 4 Nights</p>
+        <p>Includes: Hotel, Breakfast, Sightseeing</p>
+        <p class="price">$699</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="card">
+        <img src="./ح4.jpg">
+        <h3>European Highlights</h3>
+        <p>7 Days / 6 Nights</p>
+        <p>Includes: Hotel, Breakfast, Sightseeing</p>
+        <p class="price">$1299</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="card">
+        <img src="./pp.jpg">
+        <h3>Japan Discovery</h3>
+        <p>7 Days / 5 Nights</p>
+        <p>Includes: Hotel, Breakfast, Sightseeing</p>
+        <p class="price">$1099</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="card">
+        <img src="./p8.jpg">
+        <h3>USA Road Trip</h3>
+        <p>8 Days / 7 Nights</p>
+        <p>Includes: Hotel, Breakfast, Sightseeing</p>
+        <p class="price">$1199</p>
+        <button>View Details</button>
+      </div>
+    </div>
+
+    <div class="special-offer">
+      <h3>Special Offer</h3>
+      <p>Get 15% Off On Your First Booking!</p>
+      <button>Book Now</button>
+    </div>
+  </section>
+  <footer class="footer">
+
+    <div class="container footer-content">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span>Wanderly</span>
+        </a>
+
+        <p>
+            Explore more. Travel further. Create unforgettable memories.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+</body>
+</html>

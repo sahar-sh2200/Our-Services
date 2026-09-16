@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#333;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+header h2{
+    color:#fff;
+    font-size:22px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+}
+
+.hero{
+    width:100%;
+    height:100vh;
+    background:url(./images\ h.jpg);
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    text-align:center;
+    color:white;
+}
+
+.overlay h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.overlay hr{
+    width:100px;
+    margin:20px auto;
+    border:2px solid orange;
+}
+
+.overlay p{
+    width:600px;
+    margin:auto;
+    line-height:30px;
+}
+
+button{
+    margin-top:30px;
+    padding:15px 40px;
+    border:none;
+    background:#f4623a;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#d94f2a;
+}
+
+.about{
+    background:#f4623a;
+    color:white;
+    text-align:center;
+    padding:100px;
+}
+
+.about hr{
+    width:100px;
+    margin:20px auto;
+}
+
+.about p{
+    width:700px;
+    margin:auto;
+    line-height:30px;
+}
+
+.white-btn{
+    background:white;
+    color:black;
+}
+
+.services{
+    padding:100px;
+    text-align:center;
+}
+
+.service-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:50px;
+}
+
+.card{
+    width:250px;
+}
+
+.card i{
+    font-size:45px;
+    color:#f4623a;
+    margin-bottom:20px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#fff;
+}
+
+.gallery{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.gallery .box{
+    overflow:hidden;
+    height:250px;
+    cursor:pointer;
+}
+
+.gallery .box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery .box:hover img{
+    transform:scale(1.1);
+    opacity:.8;
+}
+
+.download{
+    background-color: #333;
+color: white;
+align-items:center;
+text-align: center;
+padding: 30px;
+}
+.contact{
+    text-align: center;
+    margin: 50px;
+   
+  
+   
+}
+
+.contact hr{
+    width: 100px;
+ align-items: center;
+ text-align: center;
+}
+.ss{
+    display: inline-block;width: 50%;
+
+}
+.sa{
+    display: inline-block;width: 49%;
+
+}
+.footer{
+     text-align: center;
+  
+    background-color: #c5c5c5;
+    padding: 10px;
+}
+
+</style>
+<body>
+
+
+<header>
+    <div class="logo">
+        <h2>START BOOTSTRAP</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="overlay">
+        <h1>ADMIRE MY HTML WEBSITE!</h1>
+        <hr>
+        <p>
+            This is a simple responsive website created with HTML and CSS.
+        </p>
+        <button>Find Out More</button>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about">
+    <h2>We've got what you need!</h2>
+    <hr>
+    <p>
+        Start Bootstrap has everything you need to build your website.
+    </p>
+
+    <button>Read More</button>
+</section>
+
+<!-- Services -->
+<section class="services">
+
+    <h2>At Your Service</h2>
+
+    <div class="service-container">
+
+        <div class="card">
+            <i class="fa-solid fa-gem"></i>
+            <h1></h1>
+            <h3>Sturdy Themes</h3>
+            <p>Our themes are updated regularly.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Up to Date</h3>
+            <p>Always fresh and modern.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-globe"></i>
+            <h3>Ready to Publish</h3>
+            <p>Use it immediately.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-heart"></i>
+            <h3>Made With Love</h3>
+            <p>Beautiful responsive design.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="gallery">
+
+    <div class="box">
+        <img src="./images h.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="./images h1.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="./images h2.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="./images h3.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="./images h4.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="./images h5.jpg" alt="">
+    </div>
+
+</section>
+
+<!-- Download -->
+<section class="download">
+
+    <h2>Free Download at Start Bootstrap!</h2>
+
+    <button>Download Now!</button>
+
+</section>
+
+<!-- Contact -->
+<section class="contact">
+
+    <h2>Let's Get In Touch!</h2>
+   
+<hr>
+
+    <p>
+        Ready to start your next project? Contact us!
+    </p>
+
+    <div class="contact-box">
+
+        <div class="ss">
+            <i class="fa-solid fa-phone"></i>
+            <p>+1 (555) 123-4567</p>
+        </div>
+
+        <div class="sa">
+            <i class="fa-solid fa-envelope"></i>
+            <p>contact@example.com</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    Copyright © Your Website
+</footer>
+
+
+</body>
+</html>
