@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Coffee Coffee Shop</title>
+
+<!-- Bootstrap -->
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+>
+
+   
+
+</head>
+
+<style>
+
+    :root {
+        --brown: #4b2918;
+        --dark-brown: #32190f;
+        --cream: #f7eee2;
+        --light: #fbf7f0;
+        --border: #d8c6b3;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        background: var(--light);
+        color: var(--brown);
+        font-family: "DM Sans", Arial, sans-serif;
+    }
+
+    .serif {
+        font-family: "Playfair Display", Georgia, serif;
+    }
+
+    .navbar {
+        min-height: 68px;
+        background: #fffaf3;
+    }
+
+    .brand {
+        line-height: .8;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-size: 24px;
+    }
+
+    .brand small {
+        display: block;
+        font-size: 7px;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-top: 7px;
+    }
+
+    .navbar .nav-link {
+        font-size: 13px;
+        color: #382115 !important;
+        margin: 0 10px;
+    }
+
+    .nav-link.active {
+        border-bottom: 1px solid var(--brown);
+    }
+
+    .order-btn {
+        background: var(--brown);
+        color: #fff;
+        border-radius: 30px;
+        padding: 10px 21px;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+    .order-btn:hover,
+    .learn:hover {
+        background: var(--dark-brown);
+        color: white;
+    }
+
+   
+    .hero {
+        min-height: 344px;
+
+        background-image:
+            linear-gradient(
+                90deg,
+                rgba(42, 21, 11, .74),
+                rgba(42, 21, 11, .10)
+            ),
+            url(./h2.jpg);
+
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        align-items: center;
+
+        color: white;
+    }
+
+    .hero .eyebrow {
+        letter-spacing: 5px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 68px;
+        line-height: .95;
+        margin: 6px 0;
+    }
+
+    .hero h2 {
+        font-size: 17px;
+        letter-spacing: 5px;
+    }
+
+    .hero p {
+        font-size: 12px;
+        line-height: 1.55;
+        max-width: 300px;
+    }
+
+    .outline {
+        display: inline-block;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 10px 22px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .outline:hover {
+        background: white;
+        color: var(--brown);
+    }
+
+  
+
+    .features {
+        background: var(--cream);
+    }
+
+    .feature {
+        min-height: 108px;
+        border-right: 1px solid var(--border);
+    }
+
+    .feature:last-child {
+        border: 0;
+    }
+
+    .feature .ico {
+        font-size: 26px;
+    }
+
+    .feature h6 {
+        font-family: "Playfair Display";
+        font-weight: 700;
+        margin: 5px 0 2px;
+    }
+
+    .feature p {
+        font-size: 10px;
+        margin: 0;
+    }
+
+  
+
+    .menu-section {
+        background: #fffaf3;
+    }
+
+    .side-photo {
+        height: 270px;
+        object-fit: cover;
+        border-radius: 7px;
+        width: 100%;
+    }
+
+    .menu-title .eyebrow,
+    .about .eyebrow,
+    .gallery .eyebrow {
+        font-size: 9px;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+
+    .menu-title h2,
+    .about h2,
+    .gallery h2 {
+        font-family: "Playfair Display";font-weight: 700;
+        margin: 2px 0 15px;
+    }
+
+    .menu-title h2 {
+        font-size: 23px;
+    }
+
+    .menu-col {
+        padding: 0 20px;
+    }
+
+    .menu-col:first-child {
+        border-right: 1px solid #ddd0c1;
+    }
+
+    .item {
+        display: flex;
+        justify-content: space-between;
+
+        border-bottom: 1px solid #e6ddd2;
+
+        padding: 5px 0;
+
+        font-size: 11px;
+    }
+
+    .item b {
+        font-weight: 600;
+    }
+
+    .about {
+        background: #f4e9da;
+    }
+
+    .about-photo {
+        height: 185px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 7px;
+    }
+
+    .about p {
+        font-size: 11px;
+        line-height: 1.55;
+    }
+
+    .learn {
+        display: inline-block;
+
+        background: var(--brown);
+        color: #fff;
+
+        border-radius: 24px;
+
+        padding: 10px 19px;
+
+        text-decoration: none;
+
+        font-size: 11px;
+    }
+
+    .quote {
+        font-family: "Playfair Display";
+        font-style: italic;
+
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    
+
+    .gallery {
+        background: #fffaf3;
+    }
+
+    .gallery h2 {
+        font-size: 23px;
+    }
+
+    .gallery-card {
+        height: 82px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+
+    .gallery-link {
+        font-size: 10px;
+        color: var(--brown);
+        text-decoration: none;
+    }
+
+
+    .footer {
+        background: var(--dark-brown);
+        color: #fff1e4;
+    }
+
+    .footer .brand {
+        font-size: 21px;
+    }
+
+    .footer h6 {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .footer p {
+        font-size: 9px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #684634;
+        font-size: 9px;
+    }
+
+    .newsletter-wrap {
+        display: flex;
+
+        background: #fff4e8;
+
+        border-radius: 20px;
+
+        overflow: hidden;
+    }
+
+    .newsletter-wrap input {
+        border: 0;
+        background: transparent;
+
+        padding: 8px 12px;
+
+        outline: 0;
+
+        min-width: 0;
+        width: 100%;
+
+        font-size: 9px;
+    }
+
+    .newsletter-wrap button {
+        border: 0;
+
+        background: var(--brown);
+        color: #fff;
+
+        width: 35px;
+    }
+
+  
+    @media (max-width: 991px) {
+
+        .navbar {
+            height: auto;
+            padding: 10px 0;
+        }
+
+        .navbar .nav-link {
+            margin: 3px 0;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+        }
+
+        .feature {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .menu-col:first-child {
+            border-right: 0;
+
+            border-bottom: 1px solid #ddd0c1;
+
+            padding-bottom: 18px;
+        }
+
+        .menu-col {
+            padding: 0;
+        }
+
+        .side-photo {
+            height: 220px;
+        }
+
+        .about-photo {
+            height: 230px;
+        }
+    }
+
+</style>
+
+<body>
+    <div class="container-fluid px-4 px-lg-5">
+
+    <a class="navbar-brand brand serif" href="#">
+        COFFEE
+        <small>COFFEE SHOP</small>
+    </a>
+
+
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#nav"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div
+        class="collapse navbar-collapse justify-content-center"
+        id="nav"
+    >
+
+        <ul class="navbar-nav align-items-lg-center">
+
+            <li class="nav-item">
+                <a class="nav-link active" href="#home">
+                    Home
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#menu">
+                    Menu
+                </a></li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#about">
+                    About
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#gallery">
+                    Gallery
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <a
+        class="order-btn d-none d-lg-block"
+        href="#menu"
+    >
+        🛒 &nbsp; Order Now
+    </a>
+
+</div>
+<div class="container-fluid px-5 px-lg-5">
+
+    <div class="row">
+
+        <div class="col-lg-5">
+
+            <div class="eyebrow">
+                WELCOME TO
+            </div>
+
+            <h1 class="serif fw-bold">
+                Coffee
+            </h1>
+
+            <h2>
+                COFFEE SHOP
+            </h2>
+
+            <p>
+
+                <strong>
+                    Good coffee. Better moments.
+                </strong>
+
+                <br>
+
+                At Coffee, we serve more than just coffee —
+                we serve comfort, connection and happiness
+                in every cup.
+
+            </p>
+
+            <a
+                href="#menu"
+                class="outline"
+            >
+                Explore Menu &nbsp; →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="container-fluid">
+
+    <div class="row">
+
+
+        <div class="col-6 col-lg feature text-center py-2">
+
+            <div class="ico">
+                ☕
+            </div>
+
+            <h6>
+                Premium Coffee
+            </h6>
+
+            <p>
+                Freshly brewed, always.
+            </p>
+
+        </div>
+
+
+        <div class="col-6 col-lg feature text-center py-2">
+
+            <div class="ico">
+                🍰
+            </div>
+
+            <h6>
+                Delicious Desserts
+            </h6>
+
+            <p>
+                Sweeten your day.
+            </p>
+
+        </div>
+
+
+        <div class="col-6 col-lg feature text-center py-2">
+
+            <div class="ico">
+                ◒
+            </div>
+
+            <h6>
+                Cozy Atmosphere
+            </h6>
+
+            <p>
+                A perfect place to relax.
+            </p>
+
+        </div>
+
+
+        <div class="col-6 col-lg feature text-center py-2">
+
+            <div class="ico">
+                ♧
+            </div>
+
+            <h6>
+                Friendly Service
+            </h6>
+
+            <p>
+                Always with a smile.
+            </p>
+
+        </div>
+
+
+        <div class="col-12 col-lg feature text-center py-2">
+
+            <div class="ico">
+                ♡
+            </div>
+
+            <h6>
+                Great Moments
+            </h6>
+
+            <p>
+                With every visit.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+<div class="container-fluid px-4 px-lg-5">
+
+    <div class="row g-4 align-items-stretch">
+
+
+
+        <div class="col-lg-3">
+
+            <img
+                class="side-photo"
+                src="./h1.jpg"
+                alt="Coffee"
+            >
+
+        </div>
+
+
+
+       
+
+        <div class="col-lg-6">
+
+            <div class="row h-100">
+
+
+                
+
+                <div class="col-md-6 menu-col">
+
+                    <div class="menu-title">
+
+                        <div class="eyebrow">
+                            OUR MENU
+                        </div>
+
+                        <h2>
+                            Coffee &amp; Beverages
+                        </h2>
+
+                    </div>
+
+
+                    <div class="item">
+                        <span>Espresso</span>
+                        <b>$2.50</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Americano</span>
+                        <b>$3.00</b>
+                    </div>
+
+                    <div class="item"><span>Latte</span>
+                        <b>$3.50</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Cappuccino</span>
+                        <b>$3.50</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Mocha</span>
+                        <b>$4.00</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Caramel Macchiato</span>
+                        <b>$4.00</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Cold Brew</span>
+                        <b>$3.50</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Hot Chocolate</span>
+                        <b>$3.00</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Tea (Various Flavors)</span>
+                        <b>$2.50</b>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="col-md-6 menu-col">
+
+                    <div class="menu-title">
+
+                        <div class="eyebrow">
+                            SWEET TREATS
+                        </div>
+
+                        <h2>
+                            Cakes &amp; Desserts
+                        </h2>
+
+                    </div>
+
+
+                    <div class="item">
+                        <span>Chocolate Cake</span>
+                        <b>$4.00</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Cheesecake</span>
+                        <b>$4.50</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Red Velvet Cake</span>
+                        <b>$4.50</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Tiramisu</span>
+                        <b>$4.00</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Croissant</span>
+                        <b>$3.00</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Brownie</span>
+                        <b>$3.50</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Cookies</span>
+                        <b>$2.50</b>
+                    </div>
+
+                    <div class="item">
+                        <span>Banana Bread</span>
+                        <b>$3.00</b>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+       
+
+        <div class="col-lg-3">
+
+            <img
+                class="side-photo"
+                src="./h6.jpg"
+                alt="Cake"
+            >
+
+        </div>
+
+
+    </div>
+
+</div>
+<div class="container-fluid px-4 px-lg-5">
+
+    <div class="row g-4 align-items-center">
+
+
+        <div class="col-lg-5">
+
+            <img
+                class="about-photo"
+                src="./h8.jpg"
+                alt="Coffee shop interior"
+            >
+
+        </div>
+
+
+        <div class="col-lg-4">
+
+            <div class="eyebrow">
+                ABOUT US
+            </div>
+
+            <h2>
+                More Than Just Coffee
+            </h2>
+
+            <p>
+
+                Coffee is a cozy coffee shop where great
+                taste meets a warm atmosphere.
+
+                We believe in the simple joys of life —
+                good coffee, delicious food, and meaningful
+                moments.
+
+                Whether you're here to work, catch up with
+                friends, or just take a break, you're always
+                welcome.
+
+            </p>
+
+            <a
+                href="#contact"
+                class="learn"
+            >
+                Learn More &nbsp; →
+            </a>
+
+        </div>
+
+
+        <div class="col-lg-3 text-center"><div class="quote">
+
+                Good Food
+                <br>
+
+                Good Mood
+                <br>
+
+                ♡
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+<div class="container-fluid px-4 px-lg-5">
+
+
+    <div
+        class="d-flex justify-content-between align-items-end mb-2"
+    >
+
+        <div>
+
+            <div class="eyebrow">
+                OUR GALLERY
+            </div>
+
+            <h2>
+                A Glimpse Inside
+            </h2>
+
+        </div>
+
+
+        <a
+            class="gallery-link"
+            href="#"
+        >
+            View All Photos &nbsp; →
+        </a>
+
+    </div>
+
+
+
+    <div class="row g-2">
+
+
+        <div class="col-6 col-md-2">
+
+            <img
+                class="gallery-card"
+                src="./h3.jpg"
+                alt="Coffee"
+            >
+
+        </div>
+
+
+        <div class="col-6 col-md-2">
+
+            <img
+                class="gallery-card"
+                src="./h7.jpg"
+                alt="Interior"
+            >
+
+        </div>
+
+
+        <div class="col-6 col-md-2">
+
+            <img
+                class="gallery-card"
+                src="./h4.jpg"
+                alt="Cake"
+            >
+
+        </div>
+
+
+        <div class="col-6 col-md-2">
+
+            <img
+                class="gallery-card"
+                src="./h5.jpg"
+                alt="Iced Coffee"
+            >
+
+        </div>
+
+
+        <div class="col-6 col-md-2">
+
+            <img
+                class="gallery-card"
+                src="./h2.jpg"
+                alt="Coffee Shop"
+            >
+
+        </div>
+
+
+        <div class="col-6 col-md-2">
+
+            <img
+                class="gallery-card"
+                src="./h1.jpg"
+                alt="Coffee Beans"
+            >
+
+        </div>
+
+
+    </div>
+
+</div>
+<div class="container-fluid px-4 px-lg-5">
+
+    <div class="row g-4">
+
+        <div class="col-6 col-lg-3">
+
+            <div class="brand serif">
+
+                ☕
+
+                <br>
+
+                COFFEE
+
+                <small>
+                    COFFEE SHOP
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-6 col-lg-3">
+
+            <h6>
+                📍 &nbsp; Visit Us
+            </h6>
+
+            <p>
+
+                123 Coffee Street,
+                <br>
+                Herat, Afghanistan
+
+            </p>
+
+        </div>
+
+
+        <div class="col-6 col-lg-3">
+
+            <h6>
+                ☎ &nbsp; Contact Us
+            </h6>
+
+            <p>
+
+                +93 70 123 4567
+                <br>
+
+                info@coffee.com
+
+            </p>
+
+        </div>
+
+        <div class="col-6 col-lg-3">
+
+            <h6>
+                Follow Us
+            </h6>
+
+            <p>
+                ◎ &nbsp; f &nbsp; ✈
+            </p>
+
+
+            <div class="newsletter-wrap mt-2">
+
+                <input
+                    type="email"
+                    placeholder="Your email address"
+                >
+
+                <button>
+                    →
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div
+        class="footer-bottom text-center mt-4 py-2"
+    >
+
+        © 2026 Coffee Coffee Shop.
+        All rights reserved.
+
+        &nbsp;&nbsp;
+
+        Terms &nbsp; | &nbsp;
+        Privacy &nbsp; | &nbsp;
+        Contact
+
+    </div>
+
+</div>
+    
+</body>
+</html>
