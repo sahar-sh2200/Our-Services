@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fb;
+  color: #222;
+}
+
+.services-section {
+  padding: 70px 0;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.title-line {
+  width: 55px;
+  height: 4px;
+  background: #4d8de8;
+  border-radius: 10px;
+  margin: 0 auto 22px;
+}
+
+.section-description {
+  max-width: 650px;
+  margin: 0 auto 55px;
+  text-align: center;
+  color: #9a9a9a;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.service-card {
+  height: 100%;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 3px;
+  padding: 48px 28px 30px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+  width: 95px;
+  height: 95px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5a91e8;
+  font-size: 60px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.service-card p {
+  min-height: 100px;
+  color: #a1a1a1;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-width: 190px;
+  padding: 15px 22px;
+  border: 1px solid #b9ccef;
+  color: #5b87d9;
+  background: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.read-more:hover {
+  background: #5b87d9;
+  color: #fff;
+}
+
+.read-more i {
+  font-size: 17px;
+}
+
+@media (max-width: 767px) {
+  .services-section {
+    padding: 45px 15px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-description {
+    margin-bottom: 35px;
+  }
+
+  .service-card p {
+    min-height: auto;
+  }
+}
+</style>
+<body>
+
+<section class="services-section">
+  <div class="container">
+
+    <h1 class="section-title">Our Services</h1>
+    <div class="title-line"></div>
+
+    <p class="section-description">
+      It is a long established fact that a reader will be distracted
+      by the readable content of a page when looking at its layout.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-lightbulb"></i>
+          </div>
+          <h3>Traveling Ideas</h3>
+          <p>
+            It is a long established fact that a reader will be
+            distracted by the readable content of a page.
+          </p>
+          <a href="#" class="read-more">
+            Read More <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-bar-chart-line"></i>
+          </div>
+          <h3>Business Strategy</h3>
+          <p>
+            It is a long established fact that a reader will be
+            distracted by the readable content of a page.
+          </p>
+          <a href="#" class="read-more">
+            Read More <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-building"></i>
+          </div>
+          <h3>Project Architecture</h3>
+          <p>
+            It is a long established fact that a reader will be
+            distracted by the readable content of a page.
+          </p>
+          <a href="#" class="read-more">
+            Read More <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-cash-stack"></i>
+          </div>
+          <h3>Investment Consulting</h3>
+          <p>
+            It is a long established fact that a reader will be
+            distracted by the readable content of a page.
+          </p>
+          <a href="#" class="read-more">
+            Read More <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-hand-thumbs-up"></i>
+          </div>
+          <h3>Dealership Agreement</h3>
+          <p>
+            It is a long established fact that a reader will be
+            distracted by the readable content of a page.
+          </p>
+          <a href="#" class="read-more">
+            Read More <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-globe2"></i>
+          </div>
+          <h3>Business Partnership</h3>
+          <p>
+            It is a long established fact that a reader will be
+            distracted by the readable content of a page.
+          </p>
+          <a href="#" class="read-more">
+            Read More <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
